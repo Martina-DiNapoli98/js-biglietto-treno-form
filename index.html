@@ -8,9 +8,74 @@
 </head>
 <body>
 
-<input id="km" type="text" name="Inserisci i Km" placeholder="km da percorrere" required>
-<input id="age" type="text" name="Età" placeholder="età del passeggero" required>
-<button class="btn">Invia</button>
+    <h1>Biglietto treno</h1>
+    <section class="container-sm bg-danger p-20 " >
+            <form  id="ticket" action="">
+                <div class=" p-20">
+                    <label class="text-white text-bold form-label" for="nome">Inserire Nome</label>
+                    <input id="name" class="form-control" type="text" placeholder="Inserisci il tuo nome">
+                </div>
+                <div class=" p-20">
+                    <label class="text-white text-bold form-label" for="cognome">Inserire Cognome</label>
+                    <input id="surname" class="form-control" type="text" placeholder="inserisci il tuo cognome">
+                </div>
+                <div class=" p-20">
+                    <label class="text-white text-bold form-label" for="età">Inserire l'età</label>
+                    <input id="km" class="form-control" type="text" name="Inserisci i Km" placeholder="km da percorrere" required>
+                </div>
+                 <div class=" p-20">
+                    <label class="text-white text-bold form-label" for="km">Inserire i Km da percorrere</label>
+                    <input id="age" type="text" class="form-control" name="Età" placeholder="età del passeggero" required>
+                     <button class="btn bg-white border-black my-30">Invia</button>
+                     <button class="btn bg-white border-black my-30">Annulla</button>
+                 </div>
+                
+               
+            </form>
+    </section>
+    <section class="container bg-danger d-flex justify-content-center">
+        <form action="">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://img.freepik.com/vettori-gratuito/disegno-treno-a-vapore_1152-67.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body dettagli">
+                      <h3 class="card-title">Il tuo biglietto</h3>
+                      <div>
+                        <span class="p-10">Nome</span>
+                        <span>Cognome:</span>
+                        <span id="nome"></span>
+                        <span id="cognome"></span>
+                      </div>
+                      <div>
+                        <span>Età: </span>
+                        <span class="card-text età"></span>
+                      </div>
+                      <div>
+                        <span>Carrozza: </span>
+                        <span class="card-text carrozza"></span>
+                      </div>
+                      <div>
+                        <span>Posto: </span>
+                        <span class="card-text posto"></span>
+                      </div>
+                      <div>
+                        <span>Prezzo: </span>
+                        <span class="card-text prezzo"></span>
+                      </div>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </form>
+    </section>
+  
+
+    
 
 
 

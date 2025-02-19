@@ -9,12 +9,23 @@ va applicato uno sconto del 40% per gli over 65. */
 let kmEl = document.getElementById("km")
 let ageEl = document.getElementById("age")
 let buttonEl = document.querySelector(".btn")
+let nameEl = document.getElementById("name")
+let surnameEl = document.getElementById("surname")
 
 
-console.log(kmEl.value, ageEl.value);
+
+let cardNome = document.getElementById("nome")
+let cardCognome = document.getElementById("cognome")
+let cardCarrozza = document.querySelector(".carrozza")
+let cardPosto = document.querySelector(".posto")
+let cardPrezzo = document.querySelector(".prezzo")
+let cardAge = document.querySelector(".età")
+
+
 
 buttonEl.addEventListener("click", function(e){
-    console.log(kmEl.value, ageEl.value);
+    e.preventDefault()
+    console.log(nameEl.value, surnameEl.value, kmEl.value, ageEl.value);
     
     let priceKm = 0.21;
     let totalPrice = kmEl.value * priceKm;
@@ -31,10 +42,22 @@ buttonEl.addEventListener("click", function(e){
             sconto = totalPrice
         }
         console.log(sconto);
+
+        cardNome.innerHTML = nameEl.value
+        cardCognome.innerHTML = surnameEl.value
+        cardAge.innerHTML = ageEl.value
+        cardCarrozza.innerHTML =  Math.floor(Math.random() * 9) +1;
+        cardPosto.innerHTML = Math.floor(Math.random() * 9) +1;
+        cardPrezzo.innerHTML = sconto
 })
 
 
+ 
+    
+    
 
 
+
+    
 
 
